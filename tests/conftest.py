@@ -1,9 +1,10 @@
+# flake8: noqa: E402
+
 import sys
 import pytest
+sys.path.append(".")
 from app_parking import create_app, db
 from app_parking.models import Client, Parking
-
-sys.path.append(".")
 
 
 @pytest.fixture

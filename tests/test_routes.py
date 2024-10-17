@@ -1,9 +1,10 @@
+# flake8: noqa: E402
+
 import sys
 import pytest
+sys.path.append(".")
 from datetime import datetime
 from app_parking.models import Client, ClientParking, Parking
-
-sys.path.append(".")
 
 
 @pytest.mark.parametrize("route", ["/clients", "/clients/1"])
