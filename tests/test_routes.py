@@ -73,9 +73,9 @@ def test_client_exit_parking(client, db_session):
         parking.count_available_places = 10
         db_session.flush()
 
-        entry = ClientParking(client_id=1,
-                              parking_id=1,
-                              time_in=datetime.utcnow())
+        entry = ClientParking(
+            client_id=1, parking_id=1, time_in=datetime.utcnow()
+        )
         db_session.add(entry)
         parking.count_available_places -= 1
         db_session.flush()

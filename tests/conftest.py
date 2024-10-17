@@ -22,7 +22,7 @@ def app():
             name="Test",
             surname="User",
             credit_card="1234",
-            car_number="ABC123"
+            car_number="ABC123",
         )
         parking = Parking(
             address="Test Address",
