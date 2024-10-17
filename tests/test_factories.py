@@ -1,7 +1,9 @@
 # flake8: noqa: E402
 
 import sys
+
 import factory
+
 sys.path.append(".")
 from app_parking import db
 from app_parking.models import Client, Parking
