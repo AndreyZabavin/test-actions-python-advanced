@@ -1,10 +1,9 @@
 import sys
-
 import pytest
-
-sys.path.append(".")
 from app_parking import create_app, db
 from app_parking.models import Client, Parking
+
+sys.path.append(".")
 
 
 @pytest.fixture
@@ -17,7 +16,10 @@ def app():
         db.create_all()
 
         client = Client(
-            name="Test", surname="User", credit_card="1234", car_number="ABC123"
+            name="Test",
+            surname="User",
+            credit_card="1234",
+            car_number="ABC123"
         )
         parking = Parking(
             address="Test Address",

@@ -11,7 +11,6 @@ def create_app():
 
     db.init_app(app)
 
-    from .models import Client, ClientParking, Parking
     from .routes import bp
 
     app.register_blueprint(bp)

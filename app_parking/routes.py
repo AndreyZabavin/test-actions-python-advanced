@@ -107,7 +107,8 @@ def client_exit_parking():
 
     if not entry:
         return (
-            jsonify({"error": "No active parking session found for this client"}),
+            jsonify({"error": "No active parking session /"
+                              "found for this client"}),
             404,
         )
 
