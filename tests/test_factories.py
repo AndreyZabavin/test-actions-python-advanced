@@ -2,7 +2,7 @@
 
 import sys
 
-import factory # type: ignore
+import factory  # type: ignore
 
 sys.path.append(".")
 from app_parking import db
